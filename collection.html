@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/mystyle.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>My Collection</title>
+    
+    <script>
+      function f1(){
+        alert('This is what I have learned from one semester (113-2)')
+      }
+      //this function is for EX1
+      function is1(){
+        score = 0
+        //question 1:
+        if(t1.checked == true)
+        { score += 0 }
+        else if(t2.checked == true)
+        { score += 0 }
+        else if(t3.checked == true)
+        { score += 50 }
+        else if(t4.checked == true)
+        { score += 0 } 
+    
+        //question 2:
+        if(d1.checked == true)
+        { score += 0 }
+        else if(d2.checked == true)
+        { score += 0 }
+        else if(d3.checked == true)
+        { score += 0 }
+        else if(d4.checked == true)
+        { score += 50 }
+        
+        alert("你的總分是" + score )
+      }
+
+      function is2(){
+        v1 = parseInt(b1.value)
+        v2 = parseInt(b2.value)
+        b3.value = v2/((v1/100)*(v1/100))
+      }
+
+      function is21(){
+        document.getElementById("w7").style.fontSize = w1.value + "px"
+        document.getElementById("w7").style.backgroundColor = w5.value
+        document.getElementById("w7").style.color = w6.value
+      }
+
+      function is3(){
+        n3 =Math.ceil(Math.random()*13)
+        c3.src = "poker/" + n3 + ".gif"
+      }
+
+      function player(){
+        a1 = Math.ceil(Math.random()*13)
+        wanjia.src = "poker/" + a1 + ".gif"
+        iswin()
+      }
+
+      var a1,a2
+
+      function host(){
+        a2 = Math.ceil(Math.random()*13)
+        zhuangjia.src = "poker/" + a2 + ".gif"
+        iswin()
+        //alert("a1="+a1)
+        //alert("a2="+a2)
+      }
+      function iswin(){
+      if(a1>a2){
+          document.getElementById("win").innerHTML = "玩家贏"
+        }
+        else if(a1<a2){
+          document.getElementById("win").innerHTML = "莊家贏"
+        }
+        else{
+          document.getElementById("win").innerHTML = "平手"
+        }
+      }
+
+      function is4sg(){
+        alert('密碼是 GSS 的成立年')
+      }
+      function is4(){
+        r1 = e1.value
+
+        if(e2.value == 1987){
+          document.getElementById("e3").innerHTML = r1+", 你已經成功登入網站"
+        }
+        else if(e2.value != 1987){
+          document.getElementById("e3").innerHTML = r1+", 你的密碼輸入錯誤"
+        }
+      }
+    </script>
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container px-3 navbar">
+          <a class="navbar-brand" href="#">My Collection</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarhaha" aria-controls="navbarhaha" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarhaha">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#ex1">Collection 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ex2">Collection 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ex3">Collection 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ex4">Collection 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ex5">Collection 5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ex6">Collection 6</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="starter-template" >
+        <p class="mt-3">
+        <button type="button" class="btn btn-outline-danger btn-lg mb-3" onclick="f1()">Important!!!</button>
+        </p>
+        <div class="row row-cols-lg-3 row-cols-2">
+          <div class="col mb-3">
+            <a class="btn btn-custom" data-bs-toggle="collapse" href="#ex1" role="button" aria-expanded="false" aria-controls="ex1">
+              Collection 1
+            </a>
+          </div>
+          <div class="col mb-3">
+            <a class="btn btn-custom" data-bs-toggle="collapse" href="#ex2" role="button" aria-expanded="false" aria-controls="ex2">
+              Collection 2
+            </a>
+          </div>
+          <div class="col mb-3">
+            <a class="btn btn-custom" data-bs-toggle="collapse" href="#ex3" role="button" aria-expanded="false" aria-controls="ex3">
+              Colection 3
+            </a>
+          </div>
+          <div class="col mb-3">
+            <a class="btn btn-custom" data-bs-toggle="collapse" href="#ex4" role="button" aria-expanded="false" aria-controls="ex4">
+              Collection 4
+            </a>
+          </div>
+          <div class="col mb-3">
+            <a class="btn btn-custom" data-bs-toggle="collapse" href="#ex5" role="button" aria-expanded="false" aria-controls="ex5">
+              Collection 5
+            </a>
+          </div>
+          <div class="col mb-3">
+            <a class="btn btn-custom" data-bs-toggle="collapse" href="#ex6" role="button" aria-expanded="false" aria-controls="ex6">
+              Collection 6
+            </a>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+    <div class="container">
+      <div class="collapse" id="ex1">
+        <div class="card card-body pt-4">
+          <p class="s1"> Collection 1: 選擇題</p>
+          <div class="row ">
+            <div class="col-lg-6">
+              <lable class="s2">1. 我叫什麼名字？(50分)</lable>
+              <p class="s3">
+                <input id="t1" type="radio" name="lcd"> 劉梅沙 <br>
+                <input id="t2" type="radio" name="lcd"> Luu MiSa <br>
+                <input id="t3" type="radio" name="lcd"> 劉嵋紗 <br>
+                <input id="t4" type="radio" name="lcd"> Liu MiSa <br>
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <lable class="s2">2. 我今年大學幾年級？(50分)</lable>
+              <p class="s3">
+                <input id="d1" type="radio" name="other"> 大學一年級 <br>
+                <input id="d2" type="radio" name="other"> 大學二年級 <br>
+                <input id="d3" type="radio" name="other"> 高中三年級 <br>
+                <input id="d4" type="radio" name="other"> 大學三年級 <br>
+              </p>
+            </div>
+          </div>
+
+          <p class="text-end">
+            <input id="a1" onclick="is1()" type="button" class="btn btn-large btn-outline-dark" value="查看答案">
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse" id="ex2">
+        <div class="card card-body pt-4">
+          <p class="s1">Collection 2</p>
+          <div class="row">
+            <div class="col-lg-7">
+              <p class="s2 ps-5">快看看自己的BMI是否在理想範圍吧</p>
+              <div class="row">
+                <div class="col-5 ps-5">
+                  <div class="s3">
+                    <p >
+                      身高：
+                      <input id="b1" class="s2" type="text" size="4" value="">
+                      （cm）
+                    </p>
+                    <p>
+                      體重：
+                      <input id="b2" class="s2" type="text" size="4" value="">
+                      （kg）
+                    </p>
+                    <p class="text-center">
+                      <input class="ms-3" onclick="is2()" type="button" value="計算">
+                    </p>
+                    <p>
+                      BMI = 
+                      <input id="b3" class="s2" type="text" size="3">
+                    </p>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <table class="table table-striped table-bordered text-center">
+                    <tr>
+                      <th>BMI 數值</th>
+                      <th>分類</th>
+                    </tr>
+                    <tr>
+                      <td>小於 18.5</td>
+                      <td>體重過輕</td>
+                    </tr>
+                    <tr>
+                      <td>18.5 - 24.9</td>
+                      <td>正常體重</td>
+                    </tr>
+                    <tr>
+                      <td>25 - 29.9</td>
+                      <td>超重</td>
+                    </tr>
+                    <tr>
+                      <td>30 - 34.9</td>
+                      <td>Ⅰ 級肥胖</td>
+                    </tr>
+                    <tr>
+                      <td>35 - 39.9</td>
+                      <td>Ⅱ 級肥胖</td>
+                    </tr>
+                    <tr>
+                      <td>大於等於 40</td>
+                      <td>Ⅲ 級肥胖</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 pt-5 ps-5">
+              <p class="s3 ms-5">
+                文字大小：
+                <select class="s1" id="w1" onchange="is21()">
+                  <option>25</option>
+                  <option>50</option>
+                  <option>75</option>
+                  <option>100</option>
+                </select>
+              </p>
+              <p class="s3 ms-5">
+                背景顏色：
+                <input id="w5" onchange="is21()" type="color">
+              </p>
+              <p class="s3 ms-5">
+                文字顏色：
+                <input id="w6" onchange="is21()" type="color">
+              </p>
+              <br>
+              <p class="ms-5">
+                <label id="w7">健康如意</label>
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="ex3">
+        <div class="card card-body pt-4">
+          <p class="s1">Collection 3: 抽撲克牌</p>
+          <div class="container">
+            <p class="s2 text-center">Click to see random poker</p>
+            <div class="row">
+              <img id="c3" onclick="is3()" class="offset-5 col-2" src="poker/1.gif" alt="猜看看">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="ex4">
+        <div class="card card-body pt-4">
+          <p class="s1"> Collection 4: 玩家莊家比撲克牌</p>
+          <div class="container">
+            <div class="row">
+              <img id="wanjia" onclick="player()" src="poker/0.GIF" class="offset-3 col-2">
+              <img id="zhuangjia" onclick="host()" src="poker/0.GIF" class="offset-2 col-2">
+            </div>
+            <div class="row">
+              <label class="offset-3 col-2 bg-warning text-center">玩家</label>
+              <label id="win" class="col-2 text-center text-danger">輸贏</label>
+              <label class="col-2 bg-warning text-center">莊家</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="ex5">
+        <div class="card card-body pt-4">
+          <p class="s1">Collection 5: 會員登入</p>
+          <div class="row">
+            <div class="offset-4 col-4">
+              <p class="s4">
+                帳號
+                <input id="e1" class="s3" type="text" value="">
+              </p>
+              <p class="s4">
+                密碼
+                <input id="e2" class="s3" type="password" value="">
+              </p>
+              <p class="ps-4">
+                <input onclick="is4sg()" type="button" class="btn btn-link" value="忘記密碼">
+              </p>
+              <p class="ps-5">
+                <input onclick="is4()" class="s2" type="button" value="登入">
+              </p>
+              <p class="s2" id="e3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ex6">
+        <div class="card card-body pt-4">
+          <div class="container">
+            <img class="image-container" src="img/fish.png" alt="Gray Fish">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+  
+</body>
+</html>
